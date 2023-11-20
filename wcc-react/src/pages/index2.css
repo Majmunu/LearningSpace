@@ -1,0 +1,105 @@
+.input1 {
+    color: rgb(255 255 255 / 60%);
+    background-color: #191919;
+    border: 1px solid #484848 !important;
+    border-radius: 0;
+}
+
+.ant-input-number-handler-wrap {
+    border-radius: 0 !important;
+}
+
+.ant-input-number-handler-up-inner, .ant-input-number-handler-down-inner {
+    color: rgb(255 255 255 / 60%) !important;
+}
+
+.ant-input-number-input {
+    color: rgb(255 255 255 / 40%) !important;
+}
+
+.ant-input-number-handler-wrap {
+    row-gap: 2px;
+}
+
+.ant-input-number-handler-wrap {
+    background-color: #191919 !important;
+}
+
+.ant-input-number-handler {
+    background-color: rgb(255 255 255/8%) !important;
+    border: 0 !important;
+    border-radius: 0 !important
+}
+
+/* 下拉 */
+.antd-select-dropdown {
+    background-color: #333;
+
+}
+
+.antd-select-item-option {
+    color: rgb(255 255 255/90%) !important;
+}
+
+.antd-select-selector {
+    padding: 16px 0 0;
+    text-align: left;
+    border: 1px solid #484848 !important;
+    border-radius: 4px !important;
+
+}
+
+.antd-select-selection-item {
+    color: rgb(72 72 72) !important;
+}
+
+.antd-select-arrow {
+    color: #8b8b8b !important;
+}
+
+.input2 {
+    border-bottom: 1px solid red !important;
+    border-radius: 0 !important;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    color: #3a7cee;
+}
+
+/* 1 */
+.previewImage {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    border: 1px dashed;
+}
+
+.icon1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #d14744;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 18px);
+    gap: 8px;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.blue {
+    color: white;
+    background-color: blue;
+}

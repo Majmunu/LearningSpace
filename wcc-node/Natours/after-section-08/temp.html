@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">222</button>
+</body>
+<script>
+    const btn = document.getElementById('btn')
+    console.log(111, btn)
+    btn.addEventListener('click', function (event) {
+        btn.addEventListener('hello', function (event) {
+            alert(event.detail.name)
+            console.log(event.detail.name)
+        })
+    })
+    btn.dispatchEvent(new CustomEvent('hello', {
+        detail: {name: 'Test'}
+    }))
+</script>
+</html>

@@ -1,0 +1,123 @@
+.bottom-content {
+  display: flex;
+  column-gap: 32px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 228px;
+
+  :global {
+    .text {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      display: block;
+    }
+
+    .text-left {
+      width: 196px;
+    }
+
+    .text-right {
+      width: 184px;
+    }
+
+    .button {
+      width: 146px;
+      height: 42px;
+      border: 1px solid #484848;
+      background-color: #191919;
+    }
+
+    .button-position-left {
+      position: absolute;
+    }
+
+    .button-position-right {
+      position: relative;
+    }
+
+    .button > span {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+      display: block;
+      margin: 11px 0 0 16px;
+    }
+
+    .situation-wrapper {
+      width: 104px;
+      position: relative;
+      height: 24px;
+      margin-left: 87px;
+      font-size: 14px;
+      padding-top: 2px;
+      box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.48),
+      0 9px 28px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .situation {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .situation-wrapper-one {
+      background-color: #696969;
+      margin-top: 24px;
+    }
+
+    .situation-wrapper-two {
+      background-color: #535353;
+    }
+
+    .text-with-lines {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      align-items: center;
+      font-size: 14px;
+      /*color: #ffffff;*/
+    }
+
+    .line {
+      width: 1px;
+      height: 30px;
+      /*background-color: rgb(255 255 255/60%);*/
+      background-color: aqua;
+    }
+
+    .mind {
+      display: flex;
+      align-items: center;
+    }
+
+    .horizontal-line {
+      width: 30px;
+      height: 1px;
+      background-color: rgba(190, 12, 12, 0.6);
+    }
+
+    .vertical-line {
+      width: 20px;
+      height: 50px;
+      border: 1px solid rgba(190, 12, 12, 0.6);
+      border-right: 0;
+    }
+
+    .mind-rectangle {
+      display: flex;
+      flex-direction: column;
+      row-gap: 28px;
+    }
+
+    .situation-color-up {
+      background-color: #696969;
+      margin-left: 0;
+    }
+
+    .situation-color-down {
+      background-color: #535353;
+      margin-left: 0;
+    }
+
+  }
+}
+

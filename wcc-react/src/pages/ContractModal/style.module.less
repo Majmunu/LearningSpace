@@ -1,0 +1,30 @@
+
+.config-msg {
+  display: grid;
+  grid-template-areas:
+    "title button"
+    "content content";
+
+  :global {
+    .title {
+      grid-area: title;
+    }
+
+    .button {
+      justify-content: flex-end;
+      grid-area: button;
+      display: flex;
+    }
+
+    .content {
+      font-size: 14px;
+      justify-items: center;
+      grid-area: content;
+      display: grid;
+      grid-template-columns: repeat(3, 355px);
+      grid-template-rows: repeat(3, 32px);
+      grid-column-gap: 24px;
+      grid-row-gap: 16px
+    }
+  }
+}

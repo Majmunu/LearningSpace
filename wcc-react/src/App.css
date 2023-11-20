@@ -1,0 +1,95 @@
+.app {
+    position: absolute;
+    width: 60rem;
+    height: 100rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.editor {
+    background-color: aqua !important;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: white;
+    font-size: calc(10px + 2vmin);
+    background-color: #282c34;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.radio_type {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+}
+
+.radio_type::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border: 1px solid #7d7d7d;
+    border-radius: 50%;
+    content: "";
+}
+
+.radio_type:checked::before {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: #c59c5a;
+    border: 1px solid #c59c5a;
+    border-radius: 50%;
+    content: "";
+}
+
+.radio_type:checked::after {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    display: block;
+    width: 10px;
+    height: 5px;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-top: transparent;
+    border-right: transparent;
+    transform: rotate(-45deg);
+    content: "";
+}
+
+.radio_type:checked + label {
+    color: #c59c5a;
+}
