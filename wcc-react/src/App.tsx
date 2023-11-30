@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="app">
       <h1>Fuck your fucking code</h1>
+      <text>123</text>
       {element}
     </div>
   );

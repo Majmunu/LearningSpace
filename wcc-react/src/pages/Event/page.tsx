@@ -43,7 +43,7 @@ const ComponentEvent: React.FC<ComponentEventProps> = (props) => {
           },
         ]}
       />
-      <Button type={'primary'} onClick={}>测试添加事件</Button>
+      <Button type={"primary"}>测试添加事件</Button>
     </Fragment>
   );
 };

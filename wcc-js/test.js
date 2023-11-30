@@ -133,41 +133,86 @@
 // });
 // console.log(new1[0].options);
 
-function createEventMap(id, events, actions, args) {
-  const eventMapItem = {
-    id,
-    events,
-  };
-  const event = {
-    actions,
-  };
-  const action = {
-    args,
-  };
-  event.actions.push(action);
-  eventMapItem.events.push(event);
-  return [eventMapItem];
-}
+// function createEventMap(id, events, actions, args) {
+//   const eventMapItem = {
+//     id,
+//     events,
+//   };
+//   const event = {
+//     actions,
+//   };
+//   const action = {
+//     args,
+//   };
+//   event.actions.push(action);
+//   eventMapItem.events.push(event);
+//   return [eventMapItem];
+// }
+//
+// // Example usage:
+// const id = "1";
+// const events = [{ name: "click" }];
+// const actions = [{ name: "setPos" }];
+// const args = [1, 2, [3, 4]];
+// const result = createEventMap(id, events, actions, args);
+// console.log(result);
+// const test = {
+//   id: {
+//     click: [
+//       {
+//         actionName: "setTest",
+//         actionsArgs: [{ text: "hello word" }, { time: 200 }],
+//       },
+//       {
+//         actionName: "setImage",
+//         actionsArgs: [{ image: "123" }, { time: 500 }],
+//       },
+//     ],
+//     doubleClick: {},
+//   },
+// };
 
-// Example usage:
-const id = "1";
-const events = [{ name: "click" }];
-const actions = [{ name: "setPos" }];
-const args = [1, 2, [3, 4]];
-const result = createEventMap(id, events, actions, args);
-console.log(result);
+// const test = [
+//   { name: "onClick", label: "点击" },
+//   { name: "onDoubleClick", label: "双击" },
+//   { name: "onChange", label: "改变" },
+// ];
+// const log = test.some((obj) => obj.name === "onClick");
+// console.log(log);
+
+// const test = { 1: [{ name: 123 }] };
+// const log = test[1][0];
+// console.log(log);
+
+// const test = [{ name: 123 }, { name: 456 }];
+// test[0].push("123");
+// console.log(...test);
+
 const test = {
-  id: {
-    click: [
-      {
-        actionName: "setTest",
-        actionsArgs: [{ text: "hello word" }, { time: 200 }],
-      },
-      {
-        actionName: "setImage",
-        actionsArgs: [{ image: "123" }, { time: 500 }],
-      },
-    ],
-    doubleClick: {},
-  },
+  1: [
+    {
+      name: "click",
+      labelL: "单机",
+      actions: [{ name: "openLink", label: "打开链接" }],
+    },
+  ],
 };
+const addObjectToActions = (id, name, actionName, args) => {
+  if (test[id]) {
+    const foundObject = test[id].find((obj) => obj.name === name);
+    if (foundObject) {
+      const foundAction = foundObject.actions.find(
+        (action) => action.name === actionName,
+      );
+      if (foundAction) {
+        foundAction.args = args;
+      }
+    }
+  }
+};
+
+// 例子：给 id 为 1，name 为 "click"，actions 中 name 为 "openLink" 的对象添加 args
+addObjectToActions(1, "click", "openLink", { arg1: "value1", arg2: "value2" });
+
+// 输出修改后的 test 对象
+console.log(test);
