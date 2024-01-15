@@ -10,6 +10,8 @@ const Condition = lazy(() => import("../pages/Condition/index"));
 const ContractModal = lazy(() => import("../pages/ContractModal/index"));
 const Event = lazy(() => import("../pages/Event/page"));
 const FormDemo = lazy(() => import("../pages/FormDemo"));
+const ControlDiv = lazy(() => import("../pages/ControlShow/page"));
+const StepBar = lazy(() => import("../pages/StepBar/index"));
 // 路由表统一管理理由
 export default [
   // {
@@ -85,5 +87,13 @@ export default [
   {
     path: "/form",
     element: <FormDemo />,
+  },
+  {
+    path: "/cd",
+    element: <ControlDiv />,
+  },
+  {
+    path: "/step",
+    element: <StepBar />,
   },
 ];

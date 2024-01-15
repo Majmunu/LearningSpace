@@ -11,7 +11,6 @@ const FormDemo: React.FC = () => {
       children: <CustomSelect />,
     },
   ];
-
   return (
     <div>
       <Collapse
