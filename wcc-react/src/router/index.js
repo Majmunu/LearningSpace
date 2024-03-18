@@ -12,6 +12,7 @@ const Event = lazy(() => import("../pages/Event/page"));
 const FormDemo = lazy(() => import("../pages/FormDemo"));
 const ControlDiv = lazy(() => import("../pages/ControlShow/page"));
 const StepBar = lazy(() => import("../pages/StepBar/index"));
+const DragAndDropList = lazy(() => import("../pages/Dragg/index"));
 // 路由表统一管理理由
 export default [
   // {
@@ -95,5 +96,9 @@ export default [
   {
     path: "/step",
     element: <StepBar />,
+  },
+  {
+    path: "/dg",
+    element: <DragAndDropList />,
   },
 ];
