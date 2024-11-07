@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { useCallback, useEffect, useState } from "react";
-import { Row, Col, Select, ConfigProvider } from "antd";
+import { Row, Col, Select, ConfigProvider, Input } from "antd";
 import "./style.less";
 import styles from "./styles.module.less";
 
@@ -79,10 +79,6 @@ const DragAndDropList: React.FunctionComponent = () => {
     // 赋值列表
     setList(getAppList());
   }, []);
-  switch (a) {
-    case a;
-    
-  }
 
   return (
     <div>
@@ -115,9 +111,6 @@ const DragAndDropList: React.FunctionComponent = () => {
           </Col>
         ))}
       </Row>
-      <NavLink to={""} className={styles.test}>
-        123
-      </NavLink>
 
       <ConfigProvider
         theme={{
@@ -141,6 +134,7 @@ const DragAndDropList: React.FunctionComponent = () => {
             { value: "disabled", label: "Disabled", disabled: true },
           ]}
         />
+        <Input placeholder="Borderless" />
       </ConfigProvider>
     </div>
   );

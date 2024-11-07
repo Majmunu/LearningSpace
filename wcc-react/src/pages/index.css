@@ -53,3 +53,28 @@ body {
 .toggle:checked + .button + .content {
     max-height: 500px; /* 调整为内容的最大高度 */
 }
+
+
+.resizable-div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.resizable-div-content {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.resizable-div-handle {
+    width: 10px;
+    cursor: ew-resize;
+    background-color: #ccc;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
